@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(rgb(235, 235, 235), #888df5);
+}
+
+.nav {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7vw;
+
+}
+
+.nav img {
+    height: 50px;
+    margin-top: 0.8vw;
+}
+
+.nav img:hover {
+    cursor: pointer;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+}
+
+.nav ul li i {
+    margin-left: 5px;
+}
+
+.nav ul li:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.nav ul li:nth-child(1){
+    text-decoration: underline;
+}
+
+#menu{
+    font-size: 1.5vw;
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7vw;
+}
+
+.right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 80%;
+}
+
+.left h1 {
+    width: 50vw;
+    /* background-color: aquamarine; */
+    font-size: 2.8vw;
+    margin-top: 6vw;
+}
+
+.left span {
+    color: #ff9100;
+}
+
+.left p {
+    font-size: 1.3vw;
+    width: 40vw;
+    margin-top: 2vw;
+}
+
+.btn {
+    width: 30vw;
+    height: 10vh;
+    /* background-color: #7fff00; */
+    margin-top: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    margin: 0 2vw;
+    padding: 0.9vw;
+    width: 8vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #3f3e77;
+    color: white;
+    font-weight: 600;
+}
+
+.btn button:hover {
+    background-color: #ff9100;
+    cursor: pointer;
+}
+
+.btn button i {
+    margin: 0 0.4vw;
+}
+
+.social {
+    display: flex;
+    /* background-color: aqua; */
+    width: 20vw;
+    height: 7vh;
+    padding: 12px 0;
+    margin: 2vw 5.2vw;
+}
+
+.social i {
+    font-size: 2vw;
+    margin-right: 6vw;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.social i:hover {
+    transform: rotate(360deg);
+    color:  #bb00bb;
+}
+
+@media (max-width: 600px) {
+    .main{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .nav ul {
+        display: none;
+    }
+    
+    .nav #menu {
+        display: initial;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center;
+        justify-content: center; */
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .left h1 {
+        width: 95vw;
+       
+        font-size: 8vw;
+        margin-top: 6vw;
+    }
+    .left p {
+        font-size: 4vw;
+        width: 80vw;
+        margin-top: 2vw;
+    }
+    .btn {
+        width: 63vw;
+        height: 10vh;
+        /* background-color: #7fff00; */
+        margin-top: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn button {
+        margin: 0 2vw;
+        padding: 2vw;
+        width: 34vw;
+        font-size: 4vw;
+        border-radius: 10px;
+        border: none;
+        background-color: #3f3e77;
+        color: white;
+        font-weight: 600;
+    }
+    .social i {
+        font-size: 10vw;
+        margin-right: 6vw;
+        transition: transform 0.5s;
+        cursor: pointer;
+    }
+    .right img {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 90%;
+        margin-left: 50vw;
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*
+--------------------------------------------------------------------------------
+ HTML page Login */
+
+ 
